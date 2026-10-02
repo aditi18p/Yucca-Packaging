@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yucca Packaging | Sustainable Packaging Solutions South Africa</title>
+    <meta name="description" content="Leading South African provider of innovative, sustainable packaging solutions for agriculture, food service, and food processing industries. FSC® certified, rPET, compostable packaging.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT TICKER -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span class="ticker-badge">🌱 SA & Global Delivery</span>
+            <div class="ticker-text">
+                Delivering sustainable food service & agricultural export packaging nationwide | <strong>FSC® & rPET Certified</strong>
+            </div>
+            <div class="top-bar-links">
+                <a href="#quote-calculator" class="top-link">B2B Bulk Portal</a>
+                <span class="divider">|</span>
+                <a href="#contact" class="top-link">Enquiries: +27 (0)21 864 1234</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER / NAVIGATION -->
+    <header class="main-header" id="header">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-logo">
+                <div class="logo-mark">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15 8L22 9L17 14L18.5 21L12 17.5L5.5 21L7 14L2 9L9 8L12 2Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">YUCCA</span>
+                    <span class="logo-subtitle">PACKAGING</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="#products" class="nav-link">Products <span class="chevron">▾</span></a>
+                        <!-- Mega Menu Dropdown -->
+                        <div class="mega-menu">
+                            <div class="mega-grid">
+                                <div class="mega-col">
+                                    <h4>Agriculture & Produce</h4>
+                                    <ul>
+                                        <li><a href="#products" onclick="filterCategory('agri')">Fruit Punnets & Clamshells</a></li>
+                                        <li><a href="#products" onclick="filterCategory('agri')">Top-seal Berry Trays</a></li>
+                                        <li><a href="#products" onclick="filterCategory('agri')">Export Grape Packaging</a></li>
+                                        <li><a href="#products" onclick="filterCategory('agri')">Ventilated Citrus Crates</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>Food Service & Catering</h4>
+                                    <ul>
+                                        <li><a href="#products" onclick="filterCategory('foodservice')">Eco Kraft Bowl & Boxes</a></li>
+                                        <li><a href="#products" onclick="filterCategory('foodservice')">Compostable PLA Bio-Cups</a></li>
+                                        <li><a href="#products" onclick="filterCategory('foodservice')">Hinged Lid Bagasse Containers</a></li>
+                                        <li><a href="#products" onclick="filterCategory('foodservice')">Deli Packaging & Cutlery</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>Food Processing</h4>
+                                    <ul>
+                                        <li><a href="#products" onclick="filterCategory('processing')">MAP High-Barrier Trays</a></li>
+                                        <li><a href="#products" onclick="filterCategory('processing')">Industrial Vacuum Pouches</a></li>
+                                        <li><a href="#products" onclick="filterCategory('processing')">Meat & Poultry Packaging</a></li>
+                                        <li><a href="#products" onclick="filterCategory('processing')">Bespoke Thermoformed Packs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col featured-col">
+                                    <div class="mega-card">
+                                        <span class="mega-badge">Custom Engineering</span>
+                                        <h5>Custom Moulds & Branding</h5>
+                                        <p>Tailor-made packaging designed for export compliance and high-speed automated lines.</p>
+                                        <a href="#quote-calculator" class="link-btn">Request Mould Spec →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#solutions" class="nav-link">Solutions</a></li>
+                    <li class="nav-item"><a href="#sustainability" class="nav-link">Sustainability</a></li>
+                    <li class="nav-item"><a href="#quote-calculator" class="nav-link">B2B Quote Portal</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <button class="icon-btn" id="searchToggleBtn" title="Search Products" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <a href="#quote-calculator" class="btn btn-outline">Request Quote</a>
+                <button class="quote-basket-btn" id="quoteBasketBtn" title="View Quote Basket">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="basket-count" id="basketCount">0</span>
+                </button>
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- LIVE SEARCH OVERLAY -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-modal">
+            <div class="search-header">
+                <input type="text" id="searchInput" placeholder="Search products, materials, e.g. 'Punnet', 'Kraft', 'rPET'..." autocomplete="off">
+                <button class="close-search-btn" id="closeSearchBtn">&times;</button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <p class="search-hint">Type above to search Yucca's catalog of 150+ packaging solutions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-pill">🌱 Sustainable Innovation in Africa</div>
+                <h1 class="hero-title">Engineering Next-Generation <em>Sustainable Packaging</em></h1>
+                <p class="hero-description">
+                    South Africa's trusted partner for high-performance, export-compliant packaging solutions. Serving agriculture, food service, and industrial food processors with recyclable, compostable, and custom-moulded packaging.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Packaging Catalog</a>
+                    <a href="#quote-calculator" class="btn btn-secondary">Calculate B2B Quote</a>
+                </div>
+                
+                <!-- Trust Badges -->
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <strong>500M+</strong>
+                        <span>Units Delivered</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <strong>100%</strong>
+                        <span>Recyclable Lines</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <strong>FSC® & BPI</strong>
+                        <span>Global Certified</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Interactive Image Display -->
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=1200&q=80" alt="Yucca Sustainable Packaging Solutions" class="hero-img">
+                    
+                    <!-- Floating Interactive Badges -->
+                    <div class="floating-badge badge-1">
+                        <span class="badge-icon">🍇</span>
+                        <div>
+                            <strong>Agricultural Export</strong>
+                            <small>Blueberry & Grape Punnets</small>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-badge badge-2">
+                        <span class="badge-icon">♻️</span>
+                        <div>
+                            <strong>rPET 80%+ Recycled</strong>
+                            <small>Circular Economy Certified</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METRICS & COMPLIANCE BAR -->
+    <section class="compliance-bar">
+        <div class="container compliance-grid">
+            <div class="comp-card">
+                <div class="comp-icon">📦</div>
+                <h3>Category-First B2B Sourcing</h3>
+                <p>Streamlined catalog designed for procurement managers and production directors.</p>
+            </div>
+            <div class="comp-card">
+                <div class="comp-icon">🌿</div>
+                <h3>Eco Compliance</h3>
+                <p>Full compliance with South African EPR laws, FSC®, and international export standards.</p>
+            </div>
+            <div class="comp-card">
+                <div class="comp-icon">⚡</div>
+                <h3>Automated Speed</h3>
+                <p>Punnets & trays precision-engineered for high-speed automated packing lines.</p>
+            </div>
+            <div class="comp-card">
+                <div class="comp-icon">🌍</div>
+                <h3>Global & Local Delivery</h3>
+                <p>Headquartered in Paarl & Brackenfell, supplying nationwide SA and export markets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT CATALOG & SHOWCASE -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header center">
+                <span class="sub-heading">OUR CATALOG</span>
+                <h2 class="section-title">Engineered Packaging Solutions</h2>
+                <p class="section-desc">Browse our core range of sustainable packaging tailored for fresh agricultural produce, takeaway food service, and industrial food production.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="tab-btn active" data-filter="all">All Products</button>
+                <button class="tab-btn" data-filter="agri">Agriculture & Fresh Produce</button>
+                <button class="tab-btn" data-filter="foodservice">Food Service & Takeaway</button>
+                <button class="tab-btn" data-filter="processing">Food Processing & MAP</button>
+                <button class="tab-btn" data-filter="custom">Custom Moulds</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Cards will be populated dynamically by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- B2B QUOTE & CALCULATOR SECTION -->
+    <section class="calculator-section" id="quote-calculator">
+        <div class="container">
+            <div class="calculator-wrapper">
+                <div class="calc-info">
+                    <span class="sub-heading light">B2B PORTAL</span>
+                    <h2 class="calc-title">Interactive Bulk Quote & Volume Estimator</h2>
+                    <p class="calc-desc">
+                        Select your product parameters to get instant volume tier pricing estimates and environmental offset calculations for your commercial order.
+                    </p>
+                    
+                    <div class="calc-features">
+                        <div class="calc-feat-item">
+                            <span class="check-icon">✓</span> Direct B2B wholesale pricing tiers
+                        </div>
+                        <div class="calc-feat-item">
+                            <span class="check-icon">✓</span> Customized branding & embossing options available
+                        </div>
+                        <div class="calc-feat-item">
+                            <span class="check-icon">✓</span> Rapid sample dispatch within 48 hours
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calc-box">
+                    <form id="quoteForm" onsubmit="handleQuoteSubmit(event)">
+                        <!-- Industry Select -->
+                        <div class="form-group">
+                            <label for="calcIndustry">Select Industry Sector</label>
+                            <select id="calcIndustry" class="form-control" onchange="updateCalcEstimate()">
+                                <option value="agri">Agriculture & Export Produce</option>
+                                <option value="foodservice">Food Service & Quick Service Restaurant</option>
+                                <option value="processing">Industrial Food Processing</option>
+                            </select>
+                        </div>
+
+                        <!-- Product Type Select -->
+                        <div class="form-group">
+                            <label for="calcProduct">Packaging Format</label>
+                            <select id="calcProduct" class="form-control" onchange="updateCalcEstimate()">
+                                <option value="punnet">Ventilated Fruit Punnet (125g - 500g)</option>
+                                <option value="clamshell">Hinged Clamshell Container</option>
+                                <option value="kraft">Eco Kraft Salad Bowl / Lunchbox</option>
+                                <option value="biocup">Compostable PLA Drink Cup</option>
+                                <option value="map">High-Barrier MAP Tray</option>
+                            </select>
+                        </div>
+
+                        <!-- Quantity Range Slider -->
+                        <div class="form-group">
+                            <div class="slider-header">
+                                <label for="calcQuantity">Estimated Monthly Volume</label>
+                                <span class="quantity-badge" id="quantityDisplay">25,000 Units</span>
+                            </div>
+                            <input type="range" id="calcQuantity" min="5000" max="250000" step="5000" value="25000" class="range-slider" oninput="updateCalcEstimate()">
+                            <div class="slider-labels">
+                                <span>5k</span>
+                                <span>50k</span>
+                                <span>100k</span>
+                                <span>250k+</span>
+                            </div>
+                        </div>
+
+                        <!-- Material Option -->
+                        <div class="form-group">
+                            <label>Preferred Material Standard</label>
+                            <div class="radio-grid">
+                                <label class="radio-card active">
+                                    <input type="radio" name="material" value="rpet" checked onchange="updateCalcEstimate()">
+                                    <span>rPET (100% Recyclable)</span>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="material" value="pla" onchange="updateCalcEstimate()">
+                                    <span>Compostable PLA</span>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="material" value="bagasse" onchange="updateCalcEstimate()">
+                                    <span>Sugarcane Bagasse</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Output Results Card -->
+                        <div class="calc-results">
+                            <div class="res-row">
+                                <span>Estimated Tier Unit Price:</span>
+                                <strong id="estUnitPrice">R 1.45 / unit</strong>
+                            </div>
+                            <div class="res-row">
+                                <span>Bulk Tier Discount:</span>
+                                <strong class="discount-tag" id="estDiscount">18% OFF</strong>
+                            </div>
+                            <div class="res-row">
+                                <span>Est. CO₂ Plastic Offset:</span>
+                                <strong id="estCo2">320 kg saved</strong>
+                            </div>
+                            <div class="res-total">
+                                <span>Est. Monthly Investment:</span>
+                                <span class="total-price" id="estTotalPrice">R 36,250</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full-width">Request Formal B2B Quotation →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUSTAINABILITY SPOTLIGHT -->
+    <section class="sustainability-section" id="sustainability">
+        <div class="container">
+            <div class="section-header center">
+                <span class="sub-heading">SUSTAINABLE COMMITMENT</span>
+                <h2 class="section-title">Driving Circular Economy in Africa</h2>
+                <p class="section-desc">We bridge high commercial performance with eco-friendly material innovations to reduce plastic waste and maintain compliance.</p>
+            </div>
+
+            <div class="sust-grid">
+                <div class="sust-card">
+                    <div class="sust-number">01</div>
+                    <h3>rPET Circularity</h3>
+                    <p>Utilizing high percentage recycled PET sourced locally, preventing plastic bottle waste from entering landfills and ocean ecosystems.</p>
+                    <span class="sust-tag">100% Recyclable</span>
+                </div>
+                <div class="sust-card">
+                    <div class="sust-number">02</div>
+                    <h3>Compostable Materials</h3>
+                    <p>BPI-certified plant-based PLA and sugarcane bagasse products that break down naturally without toxic chemical residues.</p>
+                    <span class="sust-tag">BPI & DIN Certified</span>
+                </div>
+                <div class="sust-card">
+                    <div class="sust-number">03</div>
+                    <h3>FSC® Certified Paper</h3>
+                    <p>All kraft paper boards are harvested from responsibly managed forests adhering to stringent environmental and social codes.</p>
+                    <span class="sust-tag">FSC® Chain of Custody</span>
+                </div>
+                <div class="sust-card">
+                    <div class="sust-number">04</div>
+                    <h3>Export Integrity</h3>
+                    <p>Packaging engineered specifically for rigorous cold-chain transport, maintaining fruit freshness from SA farms to global ports.</p>
+                    <span class="sust-tag">Export Standard</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / PAARL & BRACKENFELL ROOTS -->
+    <section class="about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" alt="Yucca Packaging Facility Paarl" class="about-img">
+                <div class="about-experience">
+                    <strong>20+</strong>
+                    <span>Years of Excellence (Est. 2002)</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="sub-heading">ABOUT YUCCA</span>
+                <h2 class="section-title">From Western Cape Origins to Global Partner</h2>
+                <p>
+                    Founded in Paarl in 2002, Yucca Packaging has grown into one of Southern Africa’s premier packaging innovators. With our state-of-the-art logistics hub in Brackenfell, Western Cape, we partner with leading agricultural growers, food franchise chains, and international exporters.
+                </p>
+                <p>
+                    Through strategic global alliances—such as our pioneering partnership with Multisteps—we introduce cutting-edge thermoforming technologies, top-seal automation, and light-weighted designs to the African continent.
+                </p>
+                <div class="about-highlights">
+                    <div class="hl-item">
+                        <strong>📍 Brackenfell Logistics Hub</strong>
+                        <p>Unit 1, Reserve 5, Capricorn Way, Brackenfell, 7560</p>
+                    </div>
+                    <div class="hl-item">
+                        <strong>🍇 Agricultural Specialization</strong>
+                        <p>Blueberries, Strawberries, Table Grapes, Citrus, and Cherries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <div class="brand-logo footer-logo">
+                    <div class="logo-mark">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L15 8L22 9L17 14L18.5 21L12 17.5L5.5 21L7 14L2 9L9 8L12 2Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title light">YUCCA</span>
+                        <span class="logo-subtitle light">PACKAGING</span>
+                    </div>
+                </div>
+                <p class="footer-desc">
+                    Innovative, sustainable packaging solutions tailored for agriculture, food service, and food processing across South Africa and international export markets.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="LinkedIn">LN</a>
+                    <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                    <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Product Range</h4>
+                <ul>
+                    <li><a href="#products" onclick="filterCategory('agri')">Fruit Punnets & Clamshells</a></li>
+                    <li><a href="#products" onclick="filterCategory('foodservice')">Eco Kraft Bowls & Lunchboxes</a></li>
+                    <li><a href="#products" onclick="filterCategory('foodservice')">Compostable PLA Drinkware</a></li>
+                    <li><a href="#products" onclick="filterCategory('processing')">High-Barrier MAP Trays</a></li>
+                    <li><a href="#quote-calculator">Custom Mould Engineering</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Sectors & Solutions</h4>
+                <ul>
+                    <li><a href="#solutions">Agriculture & Fruit Export</a></li>
+                    <li><a href="#solutions">Food Service & Quick Service</a></li>
+                    <li><a href="#solutions">Food Processing & Meat</a></li>
+                    <li><a href="#sustainability">EPR Plastic Compliance</a></li>
+                    <li><a href="#quote-calculator">B2B Credit Application</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Head Office & Contact</h4>
+                <p>📍 Unit 1, Reserve 5, Capricorn Way, Brackenfell, 7560, South Africa</p>
+                <p>📞 Phone: <a href="tel:+27218641234">+27 (0)21 864 1234</a></p>
+                <p>✉️ Email: <a href="mailto:info@yucca.co.za">info@yucca.co.za</a></p>
+                
+                <div class="newsletter-box">
+                    <small>Subscribe to packaging insights</small>
+                    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+                        <input type="email" placeholder="Enter your business email" required>
+                        <button type="submit">→</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>© 2026 Yucca Packaging (Pty) Ltd. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Trading</a>
+                    <a href="#">EPR Compliance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRODUCT QUICK-VIEW MODAL / DRAWER -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeModalBtn">&times;</button>
+            <div class="modal-body" id="modalContent">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- QUOTE BASKET DRAWER -->
+    <div class="basket-drawer-overlay" id="basketDrawer">
+        <div class="basket-drawer">
+            <div class="drawer-header">
+                <h3>Your B2B Quote Basket</h3>
+                <button class="close-drawer-btn" id="closeDrawerBtn">&times;</button>
+            </div>
+            <div class="drawer-body" id="basketItems">
+                <p class="empty-basket">Your quote basket is empty. Browse products and click "Add to Quote".</p>
+            </div>
+            <div class="drawer-footer">
+                <button class="btn btn-primary full-width" onclick="submitBasketQuote()">Submit Bulk RFQ →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
